@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#PBS -P Project_Name_of_Job
+#PBS -q parallel24
+
+# from miguel:
+# note that if you want to use 40 cores, you need to select 2 nodes, each with 20 cores
+# I'm seeing a lot of communication though, so you may be better off using select=1, np=20, and maybe submit more independent jobs if you have more to run
+
+#PBS -l select=1:ncpus=24:mpiprocs=24:mem=30GB:cluster=atlas8
+
+### You can increase mem request if your job needs more mem to run.
+
+#PBS -j oe
+#PBS -N Job_Name
+###  -N Job_Name: set filename for standard output/error message.
+
+cd $PBS_O_WORKDIR;   ## This line is needed, do not modify.
+
+##--- Put your exec/application commands below ---
+##--- For example:
+source /app1/ebenv && module load VTK/9.2.2-foss-2022a  # this is enough for running. also note that you should only run "source /app1/ebenv" once
+#source /app1/ebenv && module load buildenv/default-foss-2022a CMake/3.24.3-GCCcore-11.3.0 Clang/13.0.1-GCCcore-11.3.0
+
+np=$( cat ${PBS_NODEFILE} |wc -l );  ### get number of CPUs
+mpirun -np 5 ./bloodFlowDefoBodies 112320initialPlacing.pos
+
+

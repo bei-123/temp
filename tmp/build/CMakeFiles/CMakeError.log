@@ -1,0 +1,90 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+系统找不到指定的文件。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+系统找不到指定的文件。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+系统找不到指定的文件。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+系统找不到指定的文件。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:C:\mingw\mingw64\bin\gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+系统找不到指定的文件。
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:\mingw\mingw64\bin\g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+系统找不到指定的文件。
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+g++.exe: fatal error: no input files
+compilation terminated.
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:\\mingw\\mingw64\\bin\\gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+系统找不到指定的文件。
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+gcc.exe: fatal error: no input files
+compilation terminated.
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:\mingw\mingw64\bin\g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+系统找不到指定的文件。
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+g++.exe: fatal error: no input files
+compilation terminated.
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/陈贝/Desktop/programs/test/tmp/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_b507c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+
+Generator: execution of make failed. Make command was: "MSBuild.exe" "cmTC_b507c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+
+
